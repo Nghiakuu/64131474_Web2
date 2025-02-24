@@ -44,7 +44,6 @@ public class aboutMe extends HttpServlet {
 	        out.println("</style>");
 	        out.println("</head>");
 	        out.println("<body>");
-
 	        out.println("<div class='container'>");
 	        out.println("<h1>Thông Tin Cá Nhân</h1>");
 	        out.println("<p><strong>Họ và tên:</strong> Nguyễn Thanh Nghĩa</p>");
@@ -52,9 +51,9 @@ public class aboutMe extends HttpServlet {
 	        out.println("<p><strong>Trường:</strong> Đại học Nha Trang</p>");
 	        out.println("<p><strong>Sở thích:</strong> Nghe nhạc</p>");
 	        out.println("</div>");
-
 	        out.println("</body>");
 	        out.println("</html>");
+	        
 	}
 
 }
