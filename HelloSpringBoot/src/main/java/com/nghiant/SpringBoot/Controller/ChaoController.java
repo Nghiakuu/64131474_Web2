@@ -8,7 +8,7 @@ public class ChaoController {
 
 		@GetMapping("/chao")
 		public String chao( ModelMap m ) {
-			m.addAttribute("msg", "Chào các ban");
+			m.addAttribute("msg", "Chào");
 			return "Hello";
 		}	
 }
