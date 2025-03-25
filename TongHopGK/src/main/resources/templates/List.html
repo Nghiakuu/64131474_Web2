@@ -8,7 +8,24 @@
 <body>
 	<div th:replace ="FrontEnd::header"></div>
 	<div th:replace ="FrontEnd::navbar"></div>
-	<div th:replace ="FrontEnd::content"></div>
+	<div>
+		 <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>MSSV</th>
+                    <th>Họ Tên</th>
+                    <th>Điểm Trung Bình</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="sinhvien : ${list}">
+                    <td th:text="${sinhvien.mssv}"></td>
+                    <td th:text="${sinhvien.hoten}"></td>
+                    <td th:text="${sinhvien.dtb}"></td>
+                </tr>
+            </tbody>
+        </table>
+	</div>
 	<div th:replace ="FrontEnd::footer"></div>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
