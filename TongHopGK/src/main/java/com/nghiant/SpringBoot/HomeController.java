@@ -35,5 +35,6 @@ public class HomeController {
 		map.addAttribute("listSV", list);
 		return "Addnew";
 	}
+
 	
 }
