@@ -4,9 +4,9 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class AppController {
-	 @GetMapping("/home")
+	 @GetMapping("/")
 	    public String home(ModelMap model) {
-	        return "Home";
+	        return "frontEnd";
 	    }
 
 }
